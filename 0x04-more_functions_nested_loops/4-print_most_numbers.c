@@ -1,27 +1,18 @@
 #include "main.h"
 /**
- * more_numbers - prints more numbers
- * Return: 0
+ *print_most_numbers - prints number
+ *Return: 0
  */
-
-void more_numbers(void)
+void print_most_numbers(void)
 {
-	int i, j;
+	int i;
 
-	i = 0;
-
-	while (i < 10)
+	for (i = 48; i < 58; i++)
 	{
-		for (j = 0; j < 15; j++)
+		if (i != 50 && i != 52)
 		{
-			if (j >= 10)
-			{
-				_putchar((j / 10) + 48);
-			}
-			_putchar((j % 10) + 48);
+			_putchar(i);
 		}
-		_putchar('\n');
-
-		i++;
 	}
+	_putchar('\n');
 }
